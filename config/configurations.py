@@ -16,3 +16,4 @@ def config() -> None:
     #SYSTEM
     os.environ.setdefault("FLASK_DEBUG", load_conf(config_parse, SYSTEM, "FLASK_DEBUG", "False"))
     os.environ.setdefault("FLASK_KEY", load_conf(config_parse, SYSTEM, "FLASK_KEY", "super_secret_key"))
+    os.environ.setdefault("FLASK_HOST", load_conf(config_parse, SYSTEM, "FLASK_HOST", "super_secret_key"))

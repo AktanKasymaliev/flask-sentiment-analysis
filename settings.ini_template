@@ -1,3 +1,4 @@
 [SYSTEM]
 FLASK_KEY=secret
 FLASK_DEBUG=bool
+FLASK_HOST=host
