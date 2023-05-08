@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="main">
+    <div class="container">
+        <h1 class="title">Let's Figure It Out</h1>
+        <form id="form" action="/results" method="get">
+            <div class="input-group input-group-lg">
+                <input id="input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <button type="button" class="btn btn-success">Analyze</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

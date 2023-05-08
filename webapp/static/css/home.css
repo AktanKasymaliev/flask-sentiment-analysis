@@ -1,0 +1,36 @@
+body {
+    background-color: #F5DEB3;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+}
+
+h1.title {
+    font-size: 50px;
+    font-weight: 700;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+h1.title:hover {
+    text-decoration: none;
+}
+
+
+#form {
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    outline: none;
+    box-shadow: 0 0 10px 0 #000;
+}
