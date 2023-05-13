@@ -1,4 +1,4 @@
-from nltk.sentiment import SentimentIntensityAnalyzer
+from .sentiment.analyzer import SentimentIntensityAnalyzer
 
 def get_score_of_sentiment(text: str) -> float:
     """
