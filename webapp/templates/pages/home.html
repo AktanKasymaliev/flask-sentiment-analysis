@@ -8,10 +8,10 @@
 <div class="main">
     <div class="container">
         <h1 class="title">Let's Figure It Out</h1>
-        <form id="form" action="/results" method="get">
+        <form id="form" action="/results" method="post">
             <div class="input-group input-group-lg">
-                <input id="input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-                <button type="button" class="btn btn-success">Analyze</button>
+                <input name="text" id="input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                <button type="submit" class="btn btn-success">Analyze</button>
             </div>
         </form>
     </div>

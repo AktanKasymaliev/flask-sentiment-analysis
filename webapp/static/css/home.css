@@ -1,7 +1,3 @@
-body {
-    background-color: #F5DEB3;
-}
-
 .main {
     display: flex;
     justify-content: center;
@@ -24,7 +20,6 @@ h1.title {
 h1.title:hover {
     text-decoration: none;
 }
-
 
 #form {
     width: 50%;
