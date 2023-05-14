@@ -9,17 +9,21 @@
     <div class="container">
         {% if sentiment == 1 %}
             <h1 class="title-pos">THE SENTENCE WITH POSITIVE SENTIMENT!)</h1>
+            <img class="image" src="{{ url_for('static', filename='img/awesome.png') }}" alt="positive">
         {% elif sentiment == 0 %}
             <h1 class="title-neu">THE SENTENCE WITH NEUTRAL SENTIMENT</h1>
+            <img class="image" src="{{ url_for('static', filename='img/okay.png') }}" alt="neutral">
         {% elif sentiment == -1 %}
             <h1 class="title-neg">THE SENTENCE WITH NEGATIVE SENTIMENT(</h1>
+            <img class="image" src="{{ url_for('static', filename='img/sad.png') }}" alt="negative">
         {% else %}
-            <h1 class="title-back">Go Back And Write Smth :)</h1>
+            <h1 class="title-back">GO BACK AND WRITE SMTH :)</h1>
+            <img class="image" src="{{ url_for('static', filename='img/back.png') }}" alt="back">
         {% endif %}
     </div>
 </div>
 
-<div class="loader"></div>
+<!-- <div class="loader"></div> -->
 {% endblock %}
 
 {% block js %}
