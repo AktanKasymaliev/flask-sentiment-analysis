@@ -1,9 +1,9 @@
 from flask import Flask
 
-from config.settings import DevelopmentConfig
+from config.settings import Config
 
 
 app = Flask(__name__)
-app.config.from_object(DevelopmentConfig)
+app.config.from_object(Config)
 
 import webapp.views

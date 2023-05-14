@@ -14,13 +14,3 @@ class Config:
     STATIC_FOLDER = 'static'
     TEMPLATE_FOLDER = 'templates'
     HOST = os.environ.get('FLASK_HOST', '0.0.0.0')
-
-class ProductionConfig(Config):
-    DEVELOPMENT = False
-
-class DevelopmentConfig(Config):
-    DEVELOPMENT = True
-
-class TestingConfig(Config):
-    TESTING = True
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///:memory:'
